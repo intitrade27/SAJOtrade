@@ -1,0 +1,317 @@
+{
+  "mappings": [
+    {
+      "old": "trade_id",
+      "new": "거래ID\n(trade_id)",
+      "transform": null,
+      "default": null,
+      "description": "거래 ID를 매핑"
+    },
+    {
+      "old": "trade_type",
+      "new": "수입/수출\n(direction)",
+      "transform": "transform_trade_type",
+      "default": null,
+      "description": "수입/수출 방향을 매핑"
+    },
+    {
+      "old": "created_date",
+      "new": "거래일\n(trade_date)",
+      "transform": null,
+      "default": null,
+      "description": "거래일을 매핑"
+    },
+    {
+      "old": "status",
+      "new": "상태\n(status)",
+      "transform": null,
+      "default": null,
+      "description": "상태를 매핑"
+    },
+    {
+      "old": null,
+      "new": "라인\n(item_line_no)",
+      "transform": null,
+      "default": "1",
+      "description": "기본 라인 번호 설정"
+    },
+    {
+      "old": "item_name",
+      "new": "물품명\n(item_name)",
+      "transform": null,
+      "default": null,
+      "description": "물품명을 매핑"
+    },
+    {
+      "old": "hs_code",
+      "new": "HS\n(hscode)",
+      "transform": null,
+      "default": null,
+      "description": "HS 코드를 매핑"
+    },
+    {
+      "old": null,
+      "new": "원산지\n(origin_country)",
+      "transform": null,
+      "default": null,
+      "description": "원산지 정보는 제공되지 않음"
+    },
+    {
+      "old": "import_company",
+      "new": "수입회사\n(importer_name)",
+      "transform": null,
+      "default": null,
+      "description": "수입회사를 매핑"
+    },
+    {
+      "old": "export_company",
+      "new": "수출회사\n(exporter_name)",
+      "transform": null,
+      "default": null,
+      "description": "수출회사를 매핑"
+    },
+    {
+      "old": "import_country",
+      "new": "수입국\n(import_country)",
+      "transform": null,
+      "default": null,
+      "description": "수입국을 매핑"
+    },
+    {
+      "old": "export_country",
+      "new": "수출국\n(export_country)",
+      "transform": null,
+      "default": null,
+      "description": "수출국을 매핑"
+    },
+    {
+      "old": "incoterms",
+      "new": "인코텀즈\n(incoterms)",
+      "transform": null,
+      "default": null,
+      "description": "인코텀즈를 매핑"
+    },
+    {
+      "old": "currency",
+      "new": "통화\n(currency)",
+      "transform": null,
+      "default": null,
+      "description": "통화를 매핑"
+    },
+    {
+      "old": "unit_price",
+      "new": "단가\n(unit_price)",
+      "transform": null,
+      "default": null,
+      "description": "단가를 매핑"
+    },
+    {
+      "old": "quantity",
+      "new": "수량\n(quantity)",
+      "transform": null,
+      "default": null,
+      "description": "수량을 매핑"
+    },
+    {
+      "old": "unit",
+      "new": "단위\n(uom)",
+      "transform": null,
+      "default": null,
+      "description": "단위를 매핑"
+    },
+    {
+      "old": null,
+      "new": "라인금액\n(line_amount)",
+      "transform": "calculate_line_amount",
+      "default": null,
+      "description": "단가와 수량을 곱하여 라인금액 계산"
+    },
+    {
+      "old": "freight",
+      "new": "운임\n(freight)",
+      "transform": null,
+      "default": null,
+      "description": "운임을 매핑"
+    },
+    {
+      "old": "insurance",
+      "new": "보험\n(insurance)",
+      "transform": null,
+      "default": null,
+      "description": "보험을 매핑"
+    },
+    {
+      "old": null,
+      "new": "인보이스총액\n(invoice_total)",
+      "transform": "calculate_invoice_total",
+      "default": null,
+      "description": "인보이스 총액 계산"
+    },
+    {
+      "old": null,
+      "new": "C/I\n(ci_no)",
+      "transform": null,
+      "default": null,
+      "description": "C/I 번호는 제공되지 않음"
+    },
+    {
+      "old": null,
+      "new": "P/L\n(pl_no)",
+      "transform": null,
+      "default": null,
+      "description": "P/L 번호는 제공되지 않음"
+    },
+    {
+      "old": "bl_number",
+      "new": "B/L\n(bl_no)",
+      "transform": null,
+      "default": null,
+      "description": "B/L 번호를 매핑"
+    },
+    {
+      "old": "port_of_loading",
+      "new": "POL\n(loading_port)",
+      "transform": null,
+      "default": null,
+      "description": "선적항을 매핑"
+    },
+    {
+      "old": "port_of_discharge",
+      "new": "POD\n(discharge_port)",
+      "transform": null,
+      "default": null,
+      "description": "양하항을 매핑"
+    },
+    {
+      "old": "vessel_name",
+      "new": "선박/편명\n(vessel)",
+      "transform": null,
+      "default": null,
+      "description": "선박명을 매핑"
+    },
+    {
+      "old": "arrival_date",
+      "new": "선적일\n(shipment_date)",
+      "transform": null,
+      "default": null,
+      "description": "선적일을 매핑"
+    },
+    {
+      "old": "unloading_date",
+      "new": "하역일\n(discharge_date)",
+      "transform": null,
+      "default": null,
+      "description": "하역일을 매핑"
+    },
+    {
+      "old": "loading_deadline",
+      "new": "ETD\n(etd)",
+      "transform": null,
+      "default": null,
+      "description": "ETD를 매핑"
+    },
+    {
+      "old": "arrival_date",
+      "new": "ETA\n(eta)",
+      "transform": null,
+      "default": null,
+      "description": "ETA를 매핑"
+    },
+    {
+      "old": null,
+      "new": "G.W.\n(gross_weight)",
+      "transform": null,
+      "default": null,
+      "description": "총중량 정보는 제공되지 않음"
+    },
+    {
+      "old": null,
+      "new": "N.W.\n(net_weight)",
+      "transform": null,
+      "default": null,
+      "description": "순중량 정보는 제공되지 않음"
+    },
+    {
+      "old": null,
+      "new": "신고번호\n(customs_decl_no)",
+      "transform": null,
+      "default": null,
+      "description": "세관신고번호는 제공되지 않음"
+    },
+    {
+      "old": "fta_applied",
+      "new": "FTA\n(fta_applicable)",
+      "transform": null,
+      "default": null,
+      "description": "FTA 적용 여부를 매핑"
+    },
+    {
+      "old": null,
+      "new": "출처\n(source_module)",
+      "transform": null,
+      "default": null,
+      "description": "출처 정보는 제공되지 않음"
+    },
+    {
+      "old": null,
+      "new": "서류유형\n(source_doc_type)",
+      "transform": null,
+      "default": null,
+      "description": "서류유형 정보는 제공되지 않음"
+    },
+    {
+      "old": "created_date",
+      "new": "생성일시\n(created_at)",
+      "transform": "convert_date_format",
+      "default": null,
+      "description": "생성일시를 매핑"
+    },
+    {
+      "old": "updated_date",
+      "new": "수정일시\n(updated_at)",
+      "transform": "convert_date_format",
+      "default": null,
+      "description": "수정일시를 매핑"
+    }
+  ],
+  "unmapped_old": [
+    "import_company_address",
+    "export_company_address",
+    "import_company_tel",
+    "export_company_tel",
+    "item_value",
+    "exchange_rate",
+    "exchange_rate_date",
+    "cif_value_foreign",
+    "cif_value_krw",
+    "tariff_type",
+    "tariff_type_name",
+    "tariff_rate",
+    "tariff_amount",
+    "vat_amount",
+    "total_tax",
+    "fta_agreement",
+    "base_margin_rate",
+    "applied_margin_rate",
+    "margin_amount",
+    "cost_price",
+    "selling_price_krw",
+    "selling_price_foreign",
+    "refund_eligible",
+    "refund_type",
+    "refund_amount",
+    "refund_status",
+    "container_no",
+    "voyage_no",
+    "warehousing_date",
+    "declaration_date",
+    "clearance_date",
+    "release_date",
+    "container_return_deadline",
+    "free_time_days",
+    "documents_uploaded",
+    "documents_generated",
+    "notes"
+  ],
+  "unmapped_new": []
+}
